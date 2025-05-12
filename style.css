@@ -1,0 +1,90 @@
+/* Variáveis de cores */
+:root {
+  --bg-color: #d1d9ec;
+  --box-color: #cbcbcb;
+  --primary-color: #2c3e50;
+  --button-color: #27ae60;
+  --input-bg: #eeeeee;
+  --text-color: #34495e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.calculator, .instrucoes {
+  background-color: var(--box-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: var(--input-bg);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 4px;
+}
+
+.input-group span {
+  margin-right: 8px;
+}
+
+input[type="number"] {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--button-color);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.conteudo{
+  margin-top: 100px;
+}
+
