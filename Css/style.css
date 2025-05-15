@@ -1,209 +1,215 @@
-/* Variáveis de cores */
 :root {
-  --bg-color: #d1d9ec;
-  --box-color: #cbcbcb;
-  --primary-color: #2c3e50;
-  --button-color: #27ae60;
-  --input-bg: #eeeeee;
-  --text-color: #34495e;
+  --primary: #00e676;
+  --primary-dark: #00c767;
+  --accent: #00bfa5;
+  --text-light: #fff;
+  --text-dark: #000;
+  --bg-dark: #313131;
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: var(--text-dark);
+  background-color: darkslategray;
 }
 
-.navbar-nav .nav-link {
-  transition: 0.3s ease;
+header {
+  background-color: var(--bg-dark);
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
-
-.navbar-nav .nav-link:hover {
-  color: var(--button-color); 
-}
-
-.navbar-brand span {
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  padding: 40px 20px;
-}
-
-
-.calculator, .instrucoes {
-  background-color: var(--box-color);
-  border-radius: 12px;
-  padding: 24px;
-  margin: 10px;
-  max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
-  color: var(--primary-color);
-}
-
-label {
-  display: block;
-  margin-top: 16px;
-  font-weight: 600;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-  background-color: var(--input-bg);
-  border-radius: 6px;
-  padding: 6px 10px;
-  margin-top: 4px;
-}
-
-.input-group span {
-  margin-right: 8px;
-}
-
-input[type="number"] {
-  border: none;
-  background: var(--input-bg);
-  font-size: 16px;
-  width: 100%;
-}
-
-button {
-  margin-top: 20px;
-  width: 100%;
-  background-color: var(--button-color);
-  color: white;
-  font-weight: bold;
-  padding: 12px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #219150;
-}
-
-.resultado {
-  margin-top: 20px;
-  font-size: 18px;
-  color: var(--primary-color);
-}
-
-.dicas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 50px 20px;
-}
-
-.inicio h1{
-  text-align: left;
-}
-
-.ajuda {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
- .container-cdi {
-    border: 2px solid var(--box-color);
-    color: var(--primary-color);
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 10px;
-    margin: 20px auto;
-  }
-
-  .container-cdi h2 {
-    color: var(--button-color);
-    margin-bottom: 12px;
-  }
-
-  .container-cdi p {
-    color: var(--text-color);
-    line-height: 1.5;
-  }
-
-.card.mb-3 {
-  transition: transform 0.3s ease;
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 90px;
 }
 
-.card.mb-3:hover {
-  transform: scale(1.02);
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--accent);
 }
 
-footer {
-  background-color: #2c3e50;
-  color: white;
-  padding-top: 20px;
+.nav-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
-footer a {
-  color: white;
-}
-
-footer a:hover {
-  color: #27ae60;
+.nav-links a {
+  color: var(--text-light);
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color var(--transition);
 }
 
-.link-topo {
-    text-decoration: none;
-    color: #fff;
-    background-color: var(--button-color);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    border-radius: 50px;
-    box-shadow: #222;
-    transition: all 0.3s ease-in-out;
+.nav-links a:hover {
+  color: var(--primary);
 }
 
-.link-topo:hover {
-    background-color: #006e11;
-    transform: translateY(-5px);
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
 
+.btn:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.btn.black {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  border: 1px solid var(--text-light);
+}
+
+.btn.black:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
+
+.btn.green {
+  background-color: var(--primary);
+  color: rgb(43, 43, 43);
+}
+
+.btn.green:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
-  .dicas {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .container {
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  .calculator, .instrucoes {
+  .nav-links {
     width: 100%;
-    max-width: 90%;
+    justify-content: space-around;
+    margin-top: 10px;
   }
 
-  .inicio h1 {
-    text-align: center;
-  }
-
-  .container-cdi{
-    max-width: 80%;
-  }
-
-  .imgjovem{
+  .header-buttons {
     width: 100%;
+    justify-content: flex-start;
   }
 }
+
+
+/* HAMBURGUER */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MENU LATERAL */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  color: white;
+  padding: 30px 20px;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.side-menu .btn {
+  width: 100%;
+}
+
+.side-menu .close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .nav-links,
+  .header-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.side-menu a:hover {
+  color: var(--primary);
+}
+
+/*main*/
+
+
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel-item img {
+  height: 350px; /* ou outro valor desejado */
+  object-fit: cover;
+  width: 100%;
+}
+
+
+
+
+
 

@@ -1,0 +1,106 @@
+:root {
+  --primary: #00e676;
+  --primary-dark: #00c767;
+  --accent: #00bfa5;
+  --dark-bg: #1e1e1e;
+  --text-light: #f0f0f0;
+  --text-dark: #222;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: var(--text-dark);
+}
+
+.cdi-hero {
+  background-color: var(--accent);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cdi-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.cdi-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.cdi-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.cdi-card {
+  background-color: white;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 320px;
+  flex: 1;
+  text-align: left;
+}
+
+.cdi-card h2 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.cdi-card ul {
+  padding-left: 20px;
+}
+
+.cdi-simulador {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cdi-simulador h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cdi-simulador input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 20px;
+}
+
+.cdi-simulador button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  background-color: var(--primary);
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#resultado-simulacao {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cdi-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}

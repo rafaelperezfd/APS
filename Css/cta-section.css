@@ -1,0 +1,44 @@
+.cta-sec-final {
+  background-color: #2b2b2b;
+  padding: 60px 20px;
+  color: white;
+}
+
+.cta-final-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cta-final-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.cta-final-texto h2 {
+  font-size: 2.4rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.cta-final-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta-final-imagem {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-final-imagem img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}

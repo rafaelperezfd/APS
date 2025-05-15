@@ -1,0 +1,41 @@
+.parceiros-section {
+  background-color: var();
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.parceiros-section h2 {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 40px;
+}
+
+.parceiros-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logo-item {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-item img {
+  width: 60%;
+  height: auto;
+}
+
+.logo-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
