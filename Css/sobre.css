@@ -1,0 +1,119 @@
+/* Variáveis de cores */
+:root {
+  --bg-color: #d1d9ec;
+  --box-color: #cbcbcb;
+  --primary-color: #2c3e50;
+  --button-color: #27ae60;
+  --input-bg: #eeeeee;
+  --text-color: #34495e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar-nav .nav-link {
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--button-color); 
+}
+
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.caixa {
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.caixa h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.caixa ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.caixa li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem 1.5rem 1rem 2.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.caixa li::before {
+  content: "✔";
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.link-topo {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--button-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: #222;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-topo:hover {
+    background-color: #006e11;
+    transform: translateY(-5px);
+}
+
+
+
+

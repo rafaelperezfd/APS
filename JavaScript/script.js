@@ -1,4 +1,6 @@
-document.getElementById("calcular").addEventListener("click", function () {
+// calculadora de CDI
+document.getElementById("calcular").addEventListener("click", 
+    function () {
     const valor = parseFloat(document.getElementById("valor").value);
     const meses = parseInt(document.getElementById("periodo").value);
     const taxaCDI = parseFloat(document.getElementById("taxa").value) / 100;
@@ -13,3 +15,11 @@ document.getElementById("calcular").addEventListener("click", function () {
     document.getElementById("retorno").textContent = `R$ ${retorno}`;
 });
   
+// efeito de rolagem
+ScrollReveal().reveal('.reveal', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    delay: 200,
+    reset: true
+});

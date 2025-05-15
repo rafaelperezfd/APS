@@ -1,0 +1,209 @@
+/* Variáveis de cores */
+:root {
+  --bg-color: #d1d9ec;
+  --box-color: #cbcbcb;
+  --primary-color: #2c3e50;
+  --button-color: #27ae60;
+  --input-bg: #eeeeee;
+  --text-color: #34495e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.navbar-nav .nav-link {
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--button-color); 
+}
+
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+.calculator, .instrucoes {
+  background-color: var(--box-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: var(--input-bg);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 4px;
+}
+
+.input-group span {
+  margin-right: 8px;
+}
+
+input[type="number"] {
+  border: none;
+  background: var(--input-bg);
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--button-color);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.dicas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.inicio h1{
+  text-align: left;
+}
+
+.ajuda {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+ .container-cdi {
+    border: 2px solid var(--box-color);
+    color: var(--primary-color);
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+
+  .container-cdi h2 {
+    color: var(--button-color);
+    margin-bottom: 12px;
+  }
+
+  .container-cdi p {
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+
+.card.mb-3 {
+  transition: transform 0.3s ease;
+}
+
+.card.mb-3:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.link-topo {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--button-color);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: #222;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-topo:hover {
+    background-color: #006e11;
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+  .dicas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .calculator, .instrucoes {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .inicio h1 {
+    text-align: center;
+  }
+
+  .container-cdi{
+    max-width: 80%;
+  }
+
+  .imgjovem{
+    width: 100%;
+  }
+}
+
