@@ -9,9 +9,9 @@
 }
 
 .investimento-section {
-  background-color: rgb(255, 255, 255); /* igual ao body */
+  background-color: rgb(255, 255, 255); 
   padding: 60px 20px 80px;
-  color: var(--text-light); /* texto claro para contraste */
+  color: var(--text-light); 
   text-align: center;
 }
 
@@ -41,7 +41,7 @@
   text-align: center;
   transition: transform 0.3s ease;
   cursor: default;
-  color: #333; /* texto escuro dentro dos cards */
+  color: #333; 
 }
 
 .card:hover {
@@ -86,7 +86,7 @@
   transform: scale(1.05);
 }
 
-/* Responsividade */
+/* modelo celular */
 @media (max-width: 900px) {
   .cards-investimento {
     flex-direction: column;

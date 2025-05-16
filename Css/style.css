@@ -208,6 +208,24 @@ header {
   width: 100%;
 }
 
+.link-topo {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: #222;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-topo:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-5px);
+}
+
 
 
 
